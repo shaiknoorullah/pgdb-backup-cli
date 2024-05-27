@@ -1,0 +1,27 @@
+{
+  "name": "postgres-backup-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "test": "cross-env TS_NODE_PROJECT='./tsconfig.test.json' mocha",
+    "ci": "pnpm run build && pnpm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.12.12",
+    "@types/sinon": "^17.0.3",
+    "chai": "4.4.1",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.4.0",
+    "sinon": "^18.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
