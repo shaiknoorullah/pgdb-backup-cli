@@ -2,7 +2,7 @@
   "extension": [
     "ts"
   ],
-  "spec": "src/__tests__/*.ts",
+  "spec": "src/tests/**/*.ts",
   "require": [
     "ts-node/register"
   ],
