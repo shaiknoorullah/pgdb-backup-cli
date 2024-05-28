@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
             node-version: '20.9.0'
+            registry-url: 'https://registry.npmjs.org'
       - name: Install pnpm
         run: npm install -g pnpm
       - run: pnpm install
@@ -26,4 +27,5 @@ jobs:
       - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
